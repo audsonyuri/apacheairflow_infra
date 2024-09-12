@@ -74,10 +74,11 @@ Abra o navegador e acesse o endereço [http://localhost:8080](http://localhost:8
 
 ### 6. Diagrama de Arquitetura e Fluxo de uso
 
-[Componentes da arquitetura:](/dev_files/airflow-components.png)
+Componentes da arquitetura:
+![Componentes da arquitetura:](/dev_files/airflow-components.png)
 
-
-[Fluxo comum de uso:](/dev_files/airflow-sequence.png)
+Fluxo comum de uso:
+![Fluxo comum de uso:](/dev_files/airflow-sequence.png)
 
 ---
 
