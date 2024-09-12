@@ -1,0 +1,30 @@
+graph TB
+    subgraph Airflow ["Apache Airflow"]
+        WS[WebServer]
+        SCH[Scheduler]
+        WRK[Worker]
+        TRG[Triggerer]
+        EXE[Executor]
+    end
+    
+    subgraph Storage ["Armazenamento"]
+        DB[(PostgreSQL)]
+        RD[(Redis)]
+    end
+    
+    subgraph Interface ["Interface"]
+        UI[Interface do Usuário]
+    end
+    
+    DE[Data Engineer] -->|Submete DAGs| UI
+    UI <-->|HTTP| WS
+    WS <--> DB
+    SCH <--> DB
+    SCH <--> RD
+    WRK <--> RD
+    WRK --> EXE
+    TRG <--> DB
+    EXE --> DB
+    
+    classDef container fill:#e0e0e0,stroke:#000000,stroke-width:2px;
+    class Airflow,Storage,Interface container;

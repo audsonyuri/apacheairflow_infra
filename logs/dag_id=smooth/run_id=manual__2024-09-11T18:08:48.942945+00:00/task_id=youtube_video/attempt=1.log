@@ -1,0 +1,23 @@
+[2024-09-11T18:08:51.101+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: smooth.youtube_video manual__2024-09-11T18:08:48.942945+00:00 [queued]>
+[2024-09-11T18:08:51.128+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: smooth.youtube_video manual__2024-09-11T18:08:48.942945+00:00 [queued]>
+[2024-09-11T18:08:51.128+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-11T18:08:51.128+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-09-11T18:08:51.128+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-09-11T18:08:51.165+0000] {taskinstance.py:1300} INFO - Executing <Task(SmoothOperator): youtube_video> on 2024-09-11 18:08:48.942945+00:00
+[2024-09-11T18:08:51.175+0000] {standard_task_runner.py:55} INFO - Started process 404 to run task
+[2024-09-11T18:08:51.180+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'smooth', 'youtube_video', 'manual__2024-09-11T18:08:48.942945+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/smooth.py', '--cfg-path', '/tmp/tmp1hfb7qyz']
+[2024-09-11T18:08:51.181+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask youtube_video
+[2024-09-11T18:08:51.318+0000] {task_command.py:388} INFO - Running <TaskInstance: smooth.youtube_video manual__2024-09-11T18:08:48.942945+00:00 [running]> on host 37121e5cd29d
+[2024-09-11T18:08:51.500+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=smooth
+AIRFLOW_CTX_TASK_ID=youtube_video
+AIRFLOW_CTX_EXECUTION_DATE=2024-09-11T18:08:48.942945+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-09-11T18:08:48.942945+00:00
+[2024-09-11T18:08:51.502+0000] {smooth.py:37} INFO - Enjoy Sade - Smooth Operator: https://www.youtube.com/watch?v=4TYv2PhG89A
+[2024-09-11T18:08:51.526+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=smooth, task_id=youtube_video, execution_date=20240911T180848, start_date=20240911T180851, end_date=20240911T180851
+[2024-09-11T18:08:51.592+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-09-11T18:08:51.659+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

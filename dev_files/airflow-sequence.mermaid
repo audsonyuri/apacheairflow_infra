@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant DE as Data Engineer
+    participant UI as Interface do Usuário
+    participant WS as WebServer
+    participant SCH as Scheduler
+    participant WRK as Worker
+    participant EXE as Executor
+    participant DB as PostgreSQL
+    participant RD as Redis
+
+    DE->>UI: Submete DAG
+    UI->>WS: Envia DAG
+    WS->>DB: Armazena DAG
+    SCH->>DB: Lê DAGs
+    SCH->>RD: Enfileira tarefas
+    WRK->>RD: Consome tarefas
+    WRK->>EXE: Executa tarefas
+    EXE->>DB: Atualiza status
+    WS->>DB: Consulta status
+    UI->>DE: Exibe resultados
