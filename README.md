@@ -8,7 +8,9 @@ Este repositório fornece uma solução completa para implantação do **Apache 
 
 ## 📚 Intenção do Projeto
 
-Este projeto foi criado para demonstrar minhas habilidades e conhecimentos como SRE e para responder a um teste técnico "dre-3-test". 
+Este projeto foi criado para demonstrar minhas habilidades e conhecimentos como SRE e para responder a um teste técnico "dre-3-test".
+[Exponho aqui](/dev_files/Projeto_Data_Reliability_Engineer_Teste_Tecnico_AudsonYuriFRozendo.pdf) a documentação detalhada em resposta ao desafio.
+
 Aproveito para oferecer uma base sólida para **entusiastas de DevOps** e **profissionais de SRE** aprenderem sobre orquestração de workflows no Airflow em um ambiente local antes de migrar para a nuvem. 
 
 ---
@@ -39,8 +41,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 Clone este repositório e siga os passos abaixo para configurar o ambiente local:
 
 ```bash
-git clone https://github.com/AudsonYuri/airflow-local-cloud.git
-cd airflow-local-cloud
+git clone https://github.com/audsonyuri/apacheairflow_infra.git
+cd apacheairflow_infra
 ```
 
 ### 3. Configuração de Diretórios e Permissões
@@ -50,7 +52,7 @@ No host que executa a orquestração do Airflow, é necessário ajustar os direi
 Estando no diretório raiz do projeto, execute os comandos abaixo:
 
 ```bash
-mkdir logs plugins
+mkdir logs dags plugins
 sudo chown -R 50000:50000 ./logs ./dags ./plugins
 ```
 
@@ -72,10 +74,10 @@ Abra o navegador e acesse o endereço [http://localhost:8080](http://localhost:8
 
 ### 6. Diagrama de Arquitetura e Fluxo de uso
 
-![Componentes da arquitetura:](/dev_files/airflow-components.png)
+[Componentes da arquitetura:](/dev_files/airflow-components.png)
 
 
-![Fluxo comum de uso:](/dev_files/airflow-sequence.png)
+[Fluxo comum de uso:](/dev_files/airflow-sequence.png)
 
 ---
 
